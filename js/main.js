@@ -85,26 +85,26 @@
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
-	    loop:false,
-	    autoplay: false,
-	    margin:0,
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    nav:false,
-	    autoplayHoverPause: false,
-	    items: 1,
-	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
-	    responsive:{
-	      0:{
-	        items:1
-	      },
-	      600:{
-	        items:1
-	      },
-	      1000:{
-	        items:1
-	      }
-	    }
+			loop:false,
+			autoplay: true,
+			margin:0,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
+			nav:true,
+			autoplayHoverPause: false,
+			items: 1,
+			navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				1000:{
+					items:1
+				}
+			}
 		});
 	};
 	carousel();
